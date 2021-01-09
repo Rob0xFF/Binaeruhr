@@ -2,9 +2,9 @@
 
 void MAX7320::setOutput(uint8_t val)
 {
-	Wire.beginTransmission(_addr);
-	Wire.write(val);
-	Wire.endTransmission();
+  Wire.beginTransmission(_addr);
+  Wire.write(val);
+  Wire.endTransmission();
 }
 
 uint8_t MAX7320::getOutput(void)
